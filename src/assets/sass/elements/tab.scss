@@ -1,0 +1,42 @@
+.tab {
+    border: 1px solid $gray-600;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px $gray-600;
+    border-radius: 1.5rem !important;
+    color: $black;
+    
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;    
+    line-height: 160%;
+    width: 100%;
+
+    cursor: pointer;
+    outline: none;
+
+    margin-right: 0.8rem;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    @media(max-width: get-breakpoints("md")) {
+        padding: 1rem 1.25rem ;
+        border-radius: 1.875rem !important;
+        font-size: 1rem;  
+        flex-shrink: 0 !important;  
+        flex-basis: 55% !important;
+    }
+
+    &:hover {
+        color: $black;
+        border: 1px solid $gray-900;
+        box-shadow: 4px 4px 0px $gray-900;
+    }
+}
+
+.nav-pills > .active {
+    background-color: transparent !important;
+    color: $primary !important;
+    border: 1px solid $primary;
+    box-shadow: 4px 4px 0px $primary;
+}

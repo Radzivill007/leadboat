@@ -1,0 +1,21 @@
+strike {
+    text-decoration: none;
+    position: relative;
+    display: inline-block; 
+
+    font-size: 1rem;
+
+    &:after {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 2px solid $primary;        
+        height: calc(50% + 1px);
+        width: 100%;
+    }
+
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 0.875rem;
+    }
+}

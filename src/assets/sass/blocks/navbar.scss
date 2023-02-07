@@ -1,0 +1,40 @@
+.navbar {
+    font-size: 0.8rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+}
+
+.navbar-shadow {
+  box-shadow: 0 0 0 9999px rgba(0,0,0, 0.6);
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler {
+    border: none  !important;
+    outline: none  !important;
+
+    & > .close {
+        display: inline;
+    }
+
+    &.collapsed > .close, &:not(.collapsed) > .toggler {
+        display: none;
+    }
+}
+
+.bg-gray-gradient {
+    background: $gray-gradient;
+}
+
+.navbar-nav > .nav-item  {
+    &:hover {
+        color: $primary !important;
+    }
+}

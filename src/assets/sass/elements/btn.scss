@@ -1,0 +1,43 @@
+.btn {
+    color: $black;
+    background: $secondary-gradient;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: 4px 4px 0px $secondary-alt;
+    line-height: 160%;
+
+
+    @media(max-width: get-breakpoints("md")) {
+        border-radius: 0.625rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        color: $black;
+        box-shadow: 2px 2px 0px $secondary-alt;
+    }
+
+    &-disabled {
+        color: $gray-600;
+        background: $gray-300;
+        box-shadow: 4px 4px 0px $gray-600;
+        cursor: no-drop !important;
+
+        &:hover {
+            color: $gray-600;
+            background: $gray-300;
+            box-shadow: 4px 4px 0px $gray-600;
+        }
+    }
+}
+
+.new-button {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    opacity: 0;
+    cursor: no-drop !important;
+}

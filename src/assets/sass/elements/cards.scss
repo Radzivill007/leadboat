@@ -1,0 +1,83 @@
+.card {    
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: $white;
+    margin-bottom: 1.5rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding: 1rem;
+        border-radius: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    &-gray {
+        background-color: $gray-300;
+    }
+
+    &-primary {
+        border: 1px solid $primary;
+        box-shadow: 0.2rem 0.2rem 0rem $primary; 
+    }
+
+    &-border {
+        border: 1px solid $gray-600;
+    }
+}
+
+.row-card > .col-12 {
+    @media(min-width: get-breakpoints("md")) {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+
+        &:nth-child(1) {
+            padding-left: 1.5rem;
+        }
+
+        &:nth-last-child(1) {
+            padding-right: 1.5rem;
+        } 
+    }               
+}
+
+.row-card > .col-6 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &:nth-child(odd) {
+            padding-right: 0.5rem;
+        }
+        &:nth-child(even) {
+            padding-left: 0.5rem;
+        } 
+        
+    }               
+}
+
+.four__card {
+    li {        
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+
+        height: 2.6rem;
+        margin-bottom: 1.6rem;
+        font-size: 0.8rem;
+        line-height: 160%;
+
+        @media(max-width: get-breakpoints("md")) {
+            height: 4.125rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;             
+        }
+    }   
+}
+
+.fb-cards {
+    margin-bottom: 160px;
+    @media(max-width: get-breakpoints("md")) {
+        margin-bottom: 60px;          
+    }
+}

@@ -1,0 +1,141 @@
+.h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+    line-height: 120%;
+
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        line-height: 140%;
+    }
+}
+
+.h2 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    line-height: 120%;
+
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+        line-height: 140%;
+    }
+
+    &--alt {
+        margin-bottom: 0.8rem;
+        @media(max-width: get-breakpoints("md")) {
+            margin-bottom: 0.75rem;
+        }
+    }
+}
+
+.text-title {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    line-height: 120%;
+
+    @media(max-width: get-breakpoints("md")) {
+        line-height: 140%;
+        font-size: 1.25rem;
+    }
+}
+
+.text-regular {
+    font-size: 1rem;
+    line-height: 140%;
+    @media(max-width: get-breakpoints("md")) {
+        line-height: 160%;
+    }
+}
+
+.text-input {
+    line-height: 160%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 2px;    
+
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 1rem;
+    }
+}
+
+.text-footer {
+    line-height: 160%;
+    font-size: 0.8rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 1rem;
+    }
+}
+
+.small {
+    font-size: 0.8rem;
+    line-height: 160%;
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 0.875rem;
+    }
+}
+
+.verysmall {
+    font-size: 0.75rem;
+    line-height: 140%;
+}
+
+.verybig {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    @media(max-width: get-breakpoints("md")) {
+        font-size: 6.25rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 0.6rem;
+    @media(max-width: get-breakpoints("md")) {
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 160%;
+    }
+}
+
+.href-tel {
+
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: $black;
+    @media(max-width: get-breakpoints("md")) {
+        border-bottom: 1px dashed $gray-600;
+        font-size: 1rem;
+        color: $primary;
+    }
+}
+
+.text-gray {
+    color: $gray-900;
+}
+
+.text-disabled {
+    color: $gray-600;
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-md-nowrap {
+    @media(min-width: get-breakpoints("md")) {
+        white-space: nowrap;
+    }
+}

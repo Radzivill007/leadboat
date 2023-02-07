@@ -1,0 +1,68 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1601px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 936px,
+  lg: 1248px,
+  xl: 1560px
+);
+
+$spacer: 1rem;
+$spacers: (
+  d3: ($spacer * .3),
+  d375: ($spacer * .375),
+  d6: ($spacer * .6),
+  d75: ($spacer * .75),
+  d8: ($spacer * .8),
+  1d2: ($spacer * 1.2),
+  1d25: ($spacer * 1.25),
+  1d6: ($spacer * 1.6),
+  2d0: ($spacer * 2),
+  2d4: ($spacer * 2.4),
+  2d5: ($spacer * 2.5),
+  4d5: ($spacer * 4.5)
+);
+
+
+@function get-breakpoints($key: "md") {
+  @return map-get($grid-breakpoints, $key);
+}
+
+//GRID
+$grid-gutter-width: 3rem;
+
+$primary: #4E2FEB;
+$primary-dark: #2E12B8;
+$secondary: #FFD400;
+$secondary-alt: #FFBB00;
+$secondary-gradient: linear-gradient(263.06deg, #FFE600 0%, #FFCC00 100%);
+$black: #0A0814;
+$white: #FFFFFF;
+$red: #FF3341;
+$gray-900: #9D9BA8;
+$gray-600: #D4D3E0;
+$gray-300: #F7F7FA;
+
+$gray-gradient: linear-gradient(243.91deg, #FCFCFF 0%, #F0F0F7 66.43%);
+
+$box-shadow: 0px 20px 80px rgba(8, 8, 20, 0.06);
+
+
+//TEXT
+
+$font-weight-normal: 400;
+$font-weight-bolder: 700;
+
+//NAVBAR
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-light-toggler-border-color: transparent;
+$navbar-light-color: #000;
+$navbar-nav-link-padding-x: 0.75rem;
+

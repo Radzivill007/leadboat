@@ -1,0 +1,21 @@
+.help:hover { 
+    cursor: help;
+
+    &::after { 
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        padding: 1rem;
+        width: 10.5rem;
+        font-size: 0.8rem;
+        line-height: 160%;
+        box-shadow: $box-shadow;
+        
+    }
+}
+
+.help-retargeting:hover {
+    &::after {
+        content: 'Ретаргетинг — это повторяющийся показ интернет-рекламы продукта или услуги, к которой полльзователь ранее проявлял интерес.'; 
+    }
+} 

@@ -1,0 +1,62 @@
+.input {
+    border: 1px solid $gray-600;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0px $gray-600;
+    border-radius: 0.5rem;
+    color: $black;
+    
+    padding: 0.8rem 1.6rem;
+    font-size: 0.8rem;    
+    line-height: 160%;
+    width: 100%;
+
+    outline: none;
+
+    @media(max-width: get-breakpoints("md")) {
+        border-radius: 0.625rem;
+        font-size: 1rem;    
+    }
+
+    &:hover {
+        border: 1px solid $gray-900;
+        box-shadow: 4px 4px 0px $gray-900;
+    }
+
+    &:focus {
+        border: 1px solid $primary;
+        box-shadow: 4px 4px 0px $primary; 
+        
+        &:hover {
+            border: 1px solid $primary;
+            box-shadow: 4px 4px 0px $primary; 
+        }
+    }
+
+    &:invalid {
+        border: 1px solid $red;
+        box-shadow: 4px 4px 0px $red; 
+    }
+
+    &--invalid {
+        border: 1px solid $red;
+        box-shadow: 4px 4px 0px $red;
+    }
+}
+
+
+input {
+    &::placeholder {
+        color: $gray-600;
+    }
+}
+
+
+.loadfile {
+    color: $primary;
+    cursor: pointer;
+    margin-bottom: 0;
+
+    &:hover {
+        color: $primary-dark;
+    }
+}

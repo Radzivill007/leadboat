@@ -1,0 +1,53 @@
+.section-gray {
+    overflow: hidden;
+    background: $gray-gradient;
+
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 3.75rem;
+        padding-bottom: 0rem;  
+    }
+}
+
+.section-white {    
+    overflow: hidden;
+    background: $white;
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;  
+    }
+}
+
+.section-eight {
+    padding-top: 8rem;
+    padding-bottom: 11.5rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 3.75rem;
+        padding-bottom: 0rem;  
+    }
+}
+
+.padding-section {
+    padding-top: 8rem;
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 3.75rem;
+    }
+}
+
+
+.first {
+    padding-top: 12rem;  
+    padding-bottom: 15.5rem;
+
+    @media(max-width: get-breakpoints("md")) {
+        padding-top: 5rem;    
+        padding-bottom: 0rem;    
+    }
+}

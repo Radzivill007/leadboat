@@ -1,0 +1,89 @@
+.select {
+    position: relative;
+    width: 45%;
+    cursor: pointer; 
+
+    font-family: 'Inter';
+    font-size: 0.8rem;      
+    line-height: 160%;
+    color: $white;
+
+    @media(max-width: get-breakpoints("md")) {  
+        width: 100%;
+        font-size: 1rem; 
+    }
+
+    .select__head {
+        color: $gray-600;
+        padding: 0.8rem 1rem;
+        border: 1px solid $gray-600;
+        border-radius: 0.5rem;
+        box-shadow: 4px 4px 0px $gray-600;
+        transition: border-radius .2s ease-out;
+        
+        &::after {
+            display: block;
+            position: absolute;
+            right: 20px;
+            bottom: 50%;
+            transform: translateY(50%);
+    
+            width: 18px;
+            height: 10px;
+            background:  url(../img/dd-list.svg);
+            content: '';
+            transition: transform .3s ease-in-out; 
+        }
+    
+        &:hover {
+            border-color: $gray-900;
+            box-shadow: 4px 4px 0px $gray-900;
+        }   
+    }
+        
+    .open {
+        border-color: $primary;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 4px 4px 0px $primary; 
+        transition: border-radius .2s;  
+        
+        &::after {  
+            transform: translateY(50%) rotate(180deg);
+        } 
+        &:hover {
+            border-color:  $primary;
+            box-shadow: 4px 4px 0px  $primary;
+        }      
+    } 
+    
+    .select__list {
+        display: none;
+        position: absolute; 
+        z-index: 2;    
+        width: 100%;
+        
+        background: $white;
+        padding-left: 0rem;
+        border: 1px solid $primary;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        box-shadow: 4px 4px 0px $primary; 
+    }
+    
+    .select__item {
+        color: $black;
+        padding: 0.4rem 1rem;
+        &:nth-child(1){
+            padding-top: 0.8rem;
+        }
+        &:nth-last-child(1){
+            padding-bottom: 0.8rem;
+        }  
+        &:hover {
+            color: $primary;
+        }
+    }   
+}
+
+

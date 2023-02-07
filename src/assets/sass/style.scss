@@ -1,0 +1,100 @@
+@import "vars";
+
+@function get-breakpoints($key: "md") {
+	@return map-get($grid-breakpoints, $key);
+}
+
+html {
+    font-size: 16px;
+    background: $gray-gradient;
+
+    @media(min-width: get-breakpoints("md")) {
+        font-size: 12px;
+    }
+
+    @media(min-width: get-breakpoints("lg")) {
+        font-size: 16px;
+    }
+
+    @media(min-width: get-breakpoints("xl")) {
+        font-size: 20px;
+    } 
+}
+
+* {
+    font-family: 'Roboto';          
+}
+
+body {
+    color: #0A0814 !important;
+}
+
+/* Bootstrap */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/tables";
+@import "../../../node_modules/bootstrap/scss/navbar";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/modal";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+.container {
+    @media(max-width: get-breakpoints("md")) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+a {
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: #2E12B8;
+    }    
+}
+
+.mw-120 {
+    max-width: 120% !important;
+}
+
+.w-md-50 {
+    width: auto;
+    @media(min-width: get-breakpoints("md")) {
+        width: 50%;
+    }
+}
+
+/* Elements */
+//@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "elements/fonts";
+@import "elements/btn";
+@import "elements/input";
+@import "elements/li";
+@import "elements/strike";
+@import "elements/select";
+@import "elements/img";
+@import "elements/sections";
+@import "elements/cards";
+@import "elements/tab";
+@import "elements/breadcrumb";
+@import "elements/dropdown";
+@import "elements/helps";
+@import "elements/scrollbar";
+
+
+/* Blocks */
+//@import "blocks/header";
+//@import "blocks/card-carousel";
+@import "blocks/navbar";
